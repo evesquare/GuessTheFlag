@@ -17,18 +17,20 @@ struct ContentView: View {
                 .ignoresSafeArea()
             
             VStack(spacing: 30) {
-                Text("Tap the flag of")
-                    .foregroundStyle(.white)
-                
-                Text(countries[cottectAnswer])
-                    .foregroundStyle(.white)
-            }
-        
-            ForEach(0..<3) { number in
-                Button {
+                VStack {
+                    Text("Tap the flag of")
+                        .foregroundStyle(.white)
                     
-                } label: {
-                    Image(countries[number])
+                    Text(countries[cottectAnswer])
+                        .foregroundStyle(.white)
+                }
+                
+                ForEach(0..<3) { number in
+                    Button {
+                        
+                    } label: {
+                        Image(countries[number])
+                    }
                 }
             }
         }
